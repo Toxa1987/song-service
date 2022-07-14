@@ -1,0 +1,18 @@
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Songs
+    username: ${name:root}
+    password: ${password:password}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        dll-auto: none
+    show-sql: true
+  sql:
+    init:
+      mode: always
+server:
+  port: 8082
