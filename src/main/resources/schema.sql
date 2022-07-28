@@ -1,4 +1,4 @@
-DROP TABLE `metadata` ;
+DROP TABLE IF EXISTS `metadata` ;
 CREATE TABLE `metadata` (
                          `id` bigint(20) NOT NULL AUTO_INCREMENT,
                          `song_name` varchar(100) NOT NULL,
