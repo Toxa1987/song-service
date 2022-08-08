@@ -26,7 +26,6 @@ private SongRepository songRepository;
     }
 
     public SaveResponse saveMetadata(SongMetadataDTO songMetadataDTO){
-    System.out.println();
         SongMetadata songMetadata = SongMapper.INSTANCE.toEntity(songMetadataDTO);
         songRepository.save(songMetadata);
         return new SaveResponse(songMetadata.getId());
